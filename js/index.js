@@ -60,6 +60,15 @@ navItem4.textContent = siteContent['nav']['nav-item-4'];
 navItem5.textContent = siteContent['nav']['nav-item-5'];
 navItem6.textContent = siteContent['nav']['nav-item-6'];
 
+navItem1.style.color = 'green';
+navItem2.style.color = 'green';
+navItem3.style.color = 'green';
+navItem4.style.color = 'green';
+navItem5.style.color = 'green';
+navItem6.style.color = 'green';
+
+
+
 
 // cta element selectors
 const cta = document.querySelector('.cta');
@@ -124,3 +133,26 @@ productP.textContent = siteContent['main-content']['product-content'];
 
 visionH4.textContent = siteContent['main-content']['vision-h4'];
 visionP.textContent = siteContent['main-content']['vision-content'];
+
+
+// contact section selectors
+const contact = document.querySelector('.contact');
+const contactHeading = contact.querySelector('h4');
+const address = contact.querySelector('p:nth-of-type(1)');
+const phone = contact.querySelector('p:nth-of-type(2)');
+const email = contact.querySelector('p:nth-of-type(3)');
+
+
+// contact section updates
+contactHeading.textContent = siteContent['contact']['contact-h4'];
+address.textContent = siteContent['contact']['address'];
+phone.textContent = siteContent['contact']['phone'];
+email.textContent = siteContent['contact']['email'];
+
+
+// footer section selectors
+const footer = document.querySelector('footer');
+const footerContent = footer.querySelector('p');
+
+//footer section updates
+footerContent.textContent = siteContent['footer']['copyright'];
