@@ -60,13 +60,22 @@ navItem4.textContent = siteContent['nav']['nav-item-4'];
 navItem5.textContent = siteContent['nav']['nav-item-5'];
 navItem6.textContent = siteContent['nav']['nav-item-6'];
 
-navItem1.style.color = 'green';
-navItem2.style.color = 'green';
-navItem3.style.color = 'green';
-navItem4.style.color = 'green';
-navItem5.style.color = 'green';
-navItem6.style.color = 'green';
 
+// add new nav links
+const navItem7 = nav.appendChild(document.createElement('a'));
+navItem7.href = '#';
+navItem7.textContent = 'Sign Up!';
+
+
+const navItem0 = document.createElement('a');
+navItem0.textContent = 'Some Link';
+navItem0.href = '#';
+nav.prepend(navItem0);
+
+const allNavLinks = nav.querySelectorAll('a');
+allNavLinks.forEach(item =>{
+  item.style.color = 'green';
+});
 
 
 
@@ -156,3 +165,9 @@ const footerContent = footer.querySelector('p');
 
 //footer section updates
 footerContent.textContent = siteContent['footer']['copyright'];
+
+
+
+// style changes for stretch
+const body = document.querySelector('body');
+body.style.backgroundColor = 'lightgrey';
